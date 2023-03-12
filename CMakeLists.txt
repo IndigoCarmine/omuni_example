@@ -15,6 +15,7 @@ find_package(can_plugins2 REQUIRED)
 
 include_directories(
   include
+  ${can_plugins2_INCLUDE_DIRS}
 )
 
 # uncomment the following section in order to fill in
@@ -32,7 +33,6 @@ ament_target_dependencies(omuni_controller
   can_plugins2
 )
 
-
 rclcpp_components_register_nodes(
   omuni_controller "omuni_controller::OmuniController"
 )
@@ -40,7 +40,6 @@ rclcpp_components_register_nodes(
 install(TARGETS
   omuni_controller
   DESTINATION lib
-
 )
 
 
