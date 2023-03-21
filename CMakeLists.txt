@@ -15,6 +15,7 @@ find_package(can_plugins2 REQUIRED)
 
 include_directories(
   include
+  ${can_plugins2_INCLUDE_DIRS}
 )
 
 # uncomment the following section in order to fill in
