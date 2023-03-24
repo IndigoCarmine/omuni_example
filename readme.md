@@ -1,6 +1,8 @@
 # Omuni Example
 Omuni Example is a sample prject for Omuni on ROS2.
+
 It work with can_plugins2 and Joy.
+
 If you want to use on Foxy, you should use ...launch.py.
 
 attention: This is not checked on the real robot.
