@@ -33,7 +33,7 @@ namespace omuni_controller
             //xy is the vector of velocity. its absolute value should be less than 1.
             std::unique_ptr<can_plugins2::msg::Frame> generate_frame(float x, float y){
                 float velocity = (x*x_coefficient + y*y_coefficient)*max_velocity;
-                return get_frame(can_id,velocity);
+                return can_utils::generate_frame(can_id,velocity);
             }
     };
 

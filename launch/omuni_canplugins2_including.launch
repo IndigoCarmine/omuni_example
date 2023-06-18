@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find-pkg-share can_plugins2)/launch/slcan_bridge_launch.xml"/>
+    <node pkg="rclcpp_components" exec="component_container" name="omuni">
+    </node>
+    <load_composable_node target="omuni">
+        <composable_node pkg="omuni_example" plugin="omuni_controller::OmuniController" name="omuni_example"> 
+        </composable_node>
+    </load_composable_node>
+</launch>
